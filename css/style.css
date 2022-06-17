@@ -56,3 +56,12 @@ a{
 .header-bottom{
     padding: 29px 0;
 }
+.header__left{
+    max-width:486px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__left a{
+    display: block;
+}
