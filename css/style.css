@@ -184,3 +184,65 @@ a{
 .warning__price span{
     font-size: 24px;
 }
+/*===============================*/
+.main{
+    padding: 42px 0;
+}
+.main__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.right{
+    height: 100%;
+    min-width:219px;
+    border-radius: 3px;
+}
+.right nav{
+    top: 35px;
+    left: 0;
+    position: sticky;
+}
+.right__title{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #1f1f56;
+    padding: 10.5px 15px;
+}
+.right__item{
+    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4e4ec;
+    transition: .3s all ease;
+}
+.right__item img{
+    transition: .3s all, ease;
+    transform: rotate(0deg);
+}
+.right__item:hover{
+    color: #ffffff;
+    background-color: #fd8300;
+}
+.right__item:hover img{
+    transform: rotate(90deg);
+}
+.children{
+    flex-basis: 100%;
+    
+}
+.children__item{
+    padding: 15px;
+    color: #666666;
+    transition: .3s all ease;
+}
+
+/* 
+
+ */
