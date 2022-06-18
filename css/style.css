@@ -22,7 +22,22 @@ a{
     margin: 0 auto;
     
 }
-
+.title{
+    font-size: 30px;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(36, 36, 43);
+    font-weight: bold;
+    line-height: 0.8;
+}
+.text{
+    color: rgb(102, 102, 102);
+    line-height: 1.714;
+}
+.link{
+    color: rgb(253, 131, 0);
+    font-weight: bold;
+    transition: .3s all linear;
+}
 .header-top{
     min-height: 55px;
     background-color: #1f1f56;
@@ -213,36 +228,96 @@ a{
     padding: 10.5px 15px;
 }
 .right__item{
-    cursor: pointer;
-    flex-wrap: wrap;
-    padding: 15px;
+    background-color: #e4e4ec;
+}
+.right__link{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e4e4ec;
+    padding: 15px;
+    color: #25252c;
     transition: .3s all ease;
 }
-.right__item img{
-    transition: .3s all, ease;
-    transform: rotate(0deg);
-}
-.right__item:hover{
-    color: #ffffff;
-    background-color: #fd8300;
-}
-.right__item:hover img{
-    transform: rotate(90deg);
-}
-.children{
-    flex-basis: 100%;
-    
-}
-.children__item{
+.right__children{
+    display: none;
     padding: 15px;
     color: #666666;
+    padding-left: 30px;
     transition: .3s all ease;
 }
-
-/* 
-
- */
+.right__item .right__link img{
+    transition: .3s, all linear;
+}
+.right__children:hover{
+    background-color: #cecedd;
+}
+.right__item:hover .right__link{
+    background-color: #fd8300;
+    color: #fff;
+}
+.right__item:hover .right__link img{
+    transform: rotate(90deg);
+}
+.right__item:hover .right__children{
+    display: block;
+}
+.left{
+    max-width: 715px;
+}
+.left__title{
+    margin-bottom: 28px;
+}
+.left__text{
+    margin-bottom: 13px;
+}
+.left__link{
+    text-decoration: underline;
+}
+.left__link:hover{
+    text-decoration: none;
+}
+.left-top{
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e4e4ec;
+}
+.bottom{
+    padding-top: 35px;
+}
+.bottom__title{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.bottom__block{
+    gap: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.bottom__item{
+    max-width: 220px;
+}
+.bottom__image{
+    margin-bottom: 13px;
+    height: auto;
+}
+.bottom__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom__name{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1f1f56;
+}
+.bottom__name a{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+.bottom__name a:hover{
+    text-decoration: underline;
+}
+/*=========================================*/
