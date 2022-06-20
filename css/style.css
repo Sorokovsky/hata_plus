@@ -397,6 +397,9 @@ div.footer__phones{
     font-weight: bold;
     line-height: 1.334;
 }
+.footer__call:hover{
+    text-decoration: underline;
+}
 .footer__phones div{
     display: flex;
     flex-direction: column;
