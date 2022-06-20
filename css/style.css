@@ -205,17 +205,15 @@ a{
 }
 .main__container{
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
 }
 .right{
-    height: 100%;
+    height: auto;
     min-width:219px;
     border-radius: 3px;
 }
 .right nav{
     top: 35px;
-    left: 0;
     position: sticky;
 }
 .right__title{
@@ -297,6 +295,11 @@ a{
 .bottom__item{
     max-width: 220px;
 }
+.bottom__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .bottom__image{
     margin-bottom: 13px;
     height: auto;
@@ -321,3 +324,92 @@ a{
     text-decoration: underline;
 }
 /*=========================================*/
+.footer-top{
+    padding:41px 0;
+    background-color: #ededf5;
+}
+.footer-top__left{
+    max-width: 340px;
+    flex: 1 1 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-top div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer__item a{
+    color: rgb(102, 102, 102);
+    line-height: 1.857;
+    text-decoration: none;
+    transition: .3s all linear;
+}
+.footer__item a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+div.footer-top__right{
+    max-width: 443px;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+div.footer__contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.footer__contact a {
+    font-size: 16px;
+    color: rgb(37, 37, 44);
+    line-height: 1.5;
+}
+.footer__contact a:hover{
+    text-decoration: underline;
+}
+.footer__contact img{
+    display: inline-block;
+    vertical-align: center;
+}
+div.footer__phones{
+    display: flex;
+    justify-content: flex-start;
+    gap: 13px;
+    
+}
+.footer__phones img{
+    display: block;
+    height: 15.95px;
+}
+.footer__call {
+    font-size: 18px;
+    color: rgb(37, 37, 44);
+    font-weight: bold;
+    line-height: 1.334;
+}
+.footer__phones div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-bottom{
+    padding: 16px 10px;
+    background-color: #dcdce6;
+}
+.footer__copy{
+    font-size: 13px;
+    color: rgb(153, 153, 166);
+    line-height: 1.385;
+    text-align: center;
+}
+/*================================*/
