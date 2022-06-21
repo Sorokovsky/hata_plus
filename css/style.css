@@ -22,6 +22,9 @@ a{
     margin: 0 auto;
     
 }
+.header__container{
+    justify-content: space-between;
+}
 .title{
     font-size: 30px;
     font-family: "Roboto Slab", sans-serif;
@@ -32,6 +35,9 @@ a{
 .text{
     color: rgb(102, 102, 102);
     line-height: 1.714;
+}
+sup{
+    font-family: inherit;
 }
 .link{
     color: rgb(253, 131, 0);
@@ -46,9 +52,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.header-bottom div{
-    justify-content: flex-start;
 }
 .header-top div nav{
     display: flex;
@@ -147,16 +150,11 @@ a{
 .btn{
     border: 2px solid #fd8301;
     display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 11.5px 27px;
     border-radius: 25px;
     font-size: 16px;
     font-weight: bold;
     color: #25252c;
-    min-width: 200px;
-    min-height: 51px;
-    text-align: center;
     transition: .3s all ease;
 }
 .btn:hover{
@@ -310,6 +308,7 @@ a{
     object-fit: cover;
 }
 .bottom__name{
+    font-family: Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: #1f1f56;
@@ -319,6 +318,12 @@ a{
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
+}
+.bottom__name a sup{
+    font-size: smaller ;
+}
+.bottom-p sup{
+    font-size: smaller ;
 }
 .bottom__name a:hover{
     text-decoration: underline;
