@@ -24,6 +24,10 @@ a{
 .header__container{
     justify-content: space-between;
 }
+header{
+    /*  */
+    border-bottom: 3px solid #f3f3f3;
+}
 .title{
     font-size: 30px;
     font-family: "Roboto Slab", sans-serif;
@@ -128,8 +132,9 @@ sup{
     max-width: 475px;
     gap: 52px;
 }
-.header__socials a:before{
+.header__socials a:before, .header__socials a{
     margin-top: 5px;
+    height: auto;
 
 }
 .fb:before{
@@ -465,5 +470,80 @@ div.footer__phones{
     color: rgb(153, 153, 166);
     line-height: 1.385;
     text-align: center;
+}
+.inner{
+    padding: 36px 0;
+}
+.inner__title{
+    font-size: 24px;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(36, 36, 43);
+    font-weight: bold;
+    line-height: 1;  
+    margin-bottom: 23px;
+}
+.inner__text{
+        color: rgb(102, 102, 102);
+        line-height: 1.714; 
+        max-width: 942px;
+        margin-bottom: 8px;
+}
+table{
+    border-radius: 3px;
+    border-collapse: collapse;
+
+}
+.intro__head td{
+    padding: 10.5px 0;
+    margin: 0;
+    background-color: #1f1f56;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.715;
+}
+.intro__head td p:first-child{
+    padding-left: 20px;
+}
+
+.intro__body td a{
+    color: rgb(102, 102, 102);
+    line-height: 1.715;
+    display: block;
+}
+.intro__body td a:first-child{
+    padding-left: 20px;
+}
+.intro__body td a:last-child{
+    padding-right: 20px;
+}
+.intro__head td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+.intro__body{
+    color: #ffffff;
+    background-color: #e4e4ec;
+    transition: .3s all linear;
+}
+.intro__body td a{
+    transition: .3s all linear;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+}
+.intro__body:hover td a{
+    color: #fff;
+}
+.intro__body:not(:last-child) td a {
+    border-bottom: 1px solid #cecedd;
+}
+
+.intro__body:hover{
+    background-color: #fd8300;
+}
+.intro__body:hover .intro__body td{
+    background-color: #fd8300;
+}
+.intro__body td:last-child{
+    text-align: right;
 }
 /*================================*/
