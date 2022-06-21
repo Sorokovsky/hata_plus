@@ -17,7 +17,6 @@ a{
 }
 ._container {
     max-width: 975px;
-    padding: 0 10px;
     min-height: 100%;
     margin: 0 auto;
     
@@ -129,6 +128,28 @@ sup{
     max-width: 475px;
     gap: 52px;
 }
+.header__socials a:before{
+    margin-top: 5px;
+
+}
+.fb:before{
+    content: url('../img/fb.svg');
+}
+.tw:before{
+    content: url('../img/tw.svg');
+}
+.insta:before{
+    content: url('../img/inst.svg');
+}
+.fb:hover:before{
+    content: url('../img/fbHover.svg');
+}
+.tw:hover:before{
+    content: url('../img/twHover.svg');
+}
+.insta:hover:before{
+    content: url('../img/instHover.svg');
+}
 .header__contacts{
     display: flex;
     flex-direction: column;
@@ -208,11 +229,14 @@ sup{
 .right{
     height: auto;
     min-width:219px;
-    border-radius: 3px;
 }
 .right nav{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     top: 35px;
     position: sticky;
+    border-radius: 3px;
 }
 .right__title{
     font-size: 16px;
@@ -223,6 +247,28 @@ sup{
     background-color: #1f1f56;
     padding: 10.5px 15px;
 }
+.mail:before {
+    content: url('../img/email.svg');
+    margin-right: 12px;
+}
+.skype::before{
+    content: url('../img/skype.svg');
+    margin-right: 12px;
+}
+.header__call:first-child:before{
+    content: url('../img/phone.svg');
+    margin-right: 12px;
+}
+.header__call:not(:first-child){
+    margin-left: 28px;
+}
+.footer__call:first-child:before{
+    content: url('../img/phone.svg');
+    margin-right: 12px;
+}
+.footer__call:not(:first-child){
+    margin-left: 28px;
+}
 .right__item{
     background-color: #e4e4ec;
 }
@@ -230,7 +276,7 @@ sup{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding:10px 15px;
     color: #25252c;
     transition: .3s all ease;
 }
