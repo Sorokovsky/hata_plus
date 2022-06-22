@@ -25,7 +25,7 @@ a{
     justify-content: space-between;
 }
 header{
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .title{
     font-size: 30px;
@@ -501,6 +501,7 @@ table{
     border-collapse: collapse;
     overflow: hidden;
     margin-bottom: 28px;
+    width: 100%;
 
 }
 .intro__head td{
@@ -543,15 +544,15 @@ table{
 .intro__body:hover td a{
     color: #fff;
 }
-.intro__body:not(:last-child) td a {
+.intro__body:not(:last-child) td {
     border-bottom: 1px solid #cecedd;
 }
 
 .intro__body:hover{
     background-color: #fd8300;
 }
-.intro__body:hover td a {
-    border-bottom: 0px solid transparent;
+.intro__body:hover td:not(){
+    border-bottom: 1px solid transparent;
 }
 .intro__body:hover .intro__body td{
     background-color: #fd8300;
