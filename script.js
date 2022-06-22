@@ -10,7 +10,7 @@ if (call){
 }
 document.body.addEventListener('click', (e) => {
     const { target } = e;
-    if (target.closest('.popub') && !target.closest('.popub__content')) {
+    if ((target.closest('.popub') && !target.closest('.popub__content') || target.classList.contains('popub__close'))) {
         popub.classList.remove('_active');
         document.body.classList.remove('_lock');
     }
