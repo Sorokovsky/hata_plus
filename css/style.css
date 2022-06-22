@@ -704,11 +704,46 @@ input,textarea{
     align-items: center;
     gap: 10px;
 }
-.location__checkbox label{
+.location__checkbox input + label{
     font-size: 13px;
+    position: relative;
     color: rgb(102, 102, 102);
     line-height: 1.615;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-left: 26px;
+}
+.location__checkbox input + label:before{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c9c9d7;
+}
+.location__checkbox input + label:after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 8px;
+    opacity: 0;
+    transform: .3s all linear;
+    width: 4px;
+    height: 7px;
+    left: 6px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid #1f1f56;
+    border-right: 2px solid #1f1f56;
+}
+.location__checkbox input:checked + label:after{
+    opacity: 1;
+}
+.location__checkbox:hover label::before{
+    border-color: #000;
+}
+.location__checkbox input{
+    display: none;
 }
 ._lock{
     overflow: hidden;
