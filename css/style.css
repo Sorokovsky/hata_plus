@@ -572,7 +572,7 @@ table{
 .intro__link:hover{
     text-decoration: underline;
 }
-.section-contacts{
+.section-contacts__container{
     padding-top: 42px;
     padding-bottom: 35px;
     border-bottom: 1px solid #e4e4ec;
@@ -672,6 +672,7 @@ input,textarea{
     max-width: 466px;
     width: 100%;
     margin-bottom: 10px;
+    resize: vertical;
 
 }
 .textarea{
