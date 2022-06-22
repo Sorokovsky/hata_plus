@@ -705,4 +705,70 @@ input,textarea{
     line-height: 1.615;
     padding-top: 3px;
 }
+._lock{
+    overflow: hidden;
+}
+.popub{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #272730dc;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    justify-content: center;
+    transition: .3s all linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.popub._active{
+    opacity: 1;
+    visibility: visible;
+}
+.popub__content{
+    padding: 29px 23px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+}
+.popub__input{
+    box-sizing: border-box;
+    padding: 6px 0;
+    width: 300px;
+    margin-bottom: 10px;
+    padding-left: 15px; 
+    font-size: 13px;
+    color: rgb(153, 153, 166);
+    font-style: italic;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+}
+.popub__title{
+    font-size: 24px;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(36, 36, 43);
+    font-weight: bold;
+    line-height: 1; 
+    margin-bottom: 19px;
+}
+.popub__close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: block;
+    transform: rotate(45deg);
+    color: rgb(165, 167, 168);
+    font-size: 35px;
+}
+.popub__btn{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 100%;
+    border-radius: 21.5px;
+    background-color: #fd8300;
+    border: 1px solid #fd8300;
+    padding: 8.5px 0;
+}
 /*================================*/
