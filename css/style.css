@@ -277,6 +277,10 @@ sup{
 }
 .right__item{
     background-color: #e4e4ec;
+    border-bottom: 1px solid #cecedd;
+}
+.right__item:last-child{
+    border-bottom: unset;
 }
 .right__link{
     display: flex;
