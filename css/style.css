@@ -732,6 +732,9 @@ input,textarea{
     border-bottom: 2px solid #1f1f56;
     border-right: 2px solid #1f1f56;
 }
+iframe{
+    border: unset;
+}
 .location__checkbox input:checked + label:after{
     opacity: 1;
 }
