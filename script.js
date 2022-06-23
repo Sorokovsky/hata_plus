@@ -11,9 +11,9 @@ if (call){
 }
 document.body.addEventListener('click', (e) => {
     const { target } = e;
-    e.preventDefault();
     if ((target.closest('.popub') && !target.closest('.popub__content') || target.classList.contains('popub__close'))) {
         popub.classList.remove('_active');
+        e.preventDefault();
         document.body.classList.remove('_lock');
     }
 });

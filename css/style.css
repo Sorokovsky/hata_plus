@@ -735,8 +735,8 @@ input,textarea{
 .location__checkbox input:checked + label:after{
     opacity: 1;
 }
-.location__checkbox:hover label::before{
-    border-color: #000;
+.location__checkbox input:hover + label:after{
+    opacity: 1;
 }
 .location__checkbox input{
     display: none;
