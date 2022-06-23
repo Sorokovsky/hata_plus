@@ -813,5 +813,11 @@ input,textarea{
     background-color: #fd8300;
     border: 1px solid #fd8300;
     padding: 8.5px 0;
+    cursor: pointer;
+    transition: .3s all;
+}
+.popub__btn:hover{
+    background-color: #fff;
+    color: #000;
 }
 /*================================*/
