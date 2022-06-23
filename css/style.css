@@ -40,6 +40,7 @@ header{
 }
 sup{
     font-family: inherit;
+    font-size: 0.7em;
 }
 .link{
     color: rgb(253, 131, 0);
@@ -374,12 +375,7 @@ sup{
     font-weight: inherit;
     color: inherit;
 }
-.bottom__name a sup{
-    font-size: smaller ;
-}
-.bottom-p sup{
-    font-size: smaller ;
-}
+
 .bottom__name a:hover{
     text-decoration: underline;
 }
