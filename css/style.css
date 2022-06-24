@@ -500,7 +500,6 @@ main{
         margin-bottom: 8rem;
 }
 table{
-    border-radius: 3rem;
     border-collapse: collapse;
     overflow: hidden;
     width: 100%;
@@ -508,6 +507,7 @@ table{
 }
 .inner__table{
     margin-bottom: 28rem;
+    border-radius: 3rem;
 }
 .intro__head td{
     padding: 10.5rem 0;
@@ -847,7 +847,9 @@ iframe{
     .location__input{
         max-width: 100%;
     }
-    
+    .location__title{
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width:968px) {
     .bottom__title{
@@ -981,7 +983,6 @@ iframe{
     .location__end{
         gap: 15rem;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
     }
 }
@@ -1067,6 +1068,20 @@ iframe{
     .bottom__item{
         max-width: 400rem !important;
         width: 100%;
+    }
+}
+@media screen and (max-width:720px){
+    div.section-contacts__block{
+        justify-content: flex-start;
+        max-width: 422px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:441px){
+    .section-contacts__item{
+        max-width:253px !important;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 /*================================*/
