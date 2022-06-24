@@ -483,7 +483,7 @@ main{
     padding-bottom: 42rem;
 }
 .inner__container{
-    padding: 36rem 0;
+    padding: 36rem 10rem;
     border-bottom: 1rem solid #e4e4ec;
 }
 .inner__title{
@@ -504,9 +504,11 @@ table{
     border-radius: 3rem;
     border-collapse: collapse;
     overflow: hidden;
-    margin-bottom: 28rem;
     width: 100%;
 
+}
+.inner__table{
+    margin-bottom: 28rem;
 }
 .intro__head td{
     padding: 10.5rem 0;
@@ -960,6 +962,19 @@ iframe{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width:656px){
+    body{
+        overflow-x: hidden;
+    }
+    table{
+        width: 636rem;
+        overflow-x: scroll;
+    }
+    .inner__table{
+        overflow: hidden;
+        overflow-x: scroll;
     }
 }
 /*================================*/
