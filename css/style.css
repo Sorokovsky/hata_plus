@@ -979,7 +979,7 @@ iframe{
 }
 @media screen and (max-width:912px){
     .header__left{
-        border-right: unset;
+        border-right: 1px solid transparent;
     }
 }
 /*================================*/
