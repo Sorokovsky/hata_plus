@@ -960,7 +960,7 @@ iframe{
     }
     .header__list{
         width: 100%;
-        padding-top: 150rem;
+        padding-top: 80rem;
         padding-bottom: 100rem;
         flex-direction: column;
         align-items: center;
