@@ -977,4 +977,9 @@ iframe{
         overflow-x: scroll;
     }
 }
+@media screen and (max-width:912px){
+    .header__left{
+        border-right: unset;
+    }
+}
 /*================================*/
