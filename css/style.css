@@ -503,10 +503,11 @@ table{
     border-collapse: collapse;
     overflow: hidden;
     width: 100%;
-
+    border-radius: 3rem;
 }
 .inner__table{
     margin-bottom: 28rem;
+    overflow: hidden;
     border-radius: 3rem;
 }
 .intro__head td{
